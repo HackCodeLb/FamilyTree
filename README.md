@@ -35,8 +35,9 @@ The Family Tree project is a web application that allows users to create and vis
 ## Adding Images
 To add images to the family tree, follow these steps:
 1. Upload images to an online image hosting service or Google Drive.
-2. Obtain direct image URLs or Google Drive thumbnail links.
-3. Substitute the image links in the spreadsheet with the obtained URLs.
+2. If its Google Drive change the sharing settings of the images to "Anyone with the link can view" to ensure general access.
+3. Obtain direct image URLs or Google Drive thumbnail links.
+4. Substitute the image links in the spreadsheet with the obtained URLs.
 
 ## Substituting Drive Images Link
 To substitute Google Drive images links with direct URLs, replace the `YOUR_IMAGE_ID` part of `https://drive.google.com/thumbnail?id=YOUR_IMAGE_ID&sz=w1000`.

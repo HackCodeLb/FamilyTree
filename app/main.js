@@ -65,29 +65,16 @@ window.onload = function () {
     }
   }
 
-  // Initialize family data and then initialize the family tree
-  initializeFamilyData()
-    .then(function (data) {
-      if (data) {
-        // Update the total member count in the HTML
-        document.getElementById("total-members").textContent = data.totalMembers;
-        // Hide the loading spinner
-        document.getElementById("loading-spinner").style.display = "none";
-        // Initialize the family tree
-        initializeFamilyTree();
-      }
-    });
-
   // Function to initialize the family tree
   function initializeFamilyTree() {
     // Function to create the family tree with the specified orientation
     var createFamilyTree = function (orientation) {
       var family = new FamilyTree(document.getElementById("tree"), {
-      menu: {
-            pdf: { text: "Export PDF" }
+        menu: {
+          pdf: { text: "Export PDF" }
         },
         nodeMenu: {
-            pdf: { text: "Export PDF" }
+          pdf: { text: "Export PDF" }
         },
         mouseScrool: FamilyTree.action.scroll,
         showYScroll: FamilyTree.scroll.visible,
@@ -145,4 +132,18 @@ window.onload = function () {
     });
 
   }
+
+  // Initialize family data and then initialize the family tree
+  initializeFamilyData()
+    .then(function (data) {
+      if (data) {
+        // Update the total member count in the HTML
+        document.getElementById("total-members").textContent = data.totalMembers;
+        // Hide the loading spinner
+        document.getElementById("loading-spinner").style.display = "none";
+        // Initialize the family tree
+        initializeFamilyTree();
+      }
+    });
+
 }

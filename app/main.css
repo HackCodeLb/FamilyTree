@@ -1,0 +1,59 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: Helvetica;
+}
+
+#tree {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-y: auto;
+}
+
+#orientation-dropdown-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#orientation-dropdown-container label {
+  font-weight: bold;
+}
+
+.spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid #f3f3f3;
+  border-top-color: #3498db;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.filter rect,
+.filter image,
+.filter text,
+.filter use {
+  filter: blur(6px);
+}

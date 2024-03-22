@@ -27,7 +27,7 @@ The Family Tree project is a web application that allows users to create and vis
 
 ## Usage
 1. Obtain Google Sheets API key and enable Google Sheets API access.
-2. Create a Google Sheets spreadsheet with the required family data.
+2. Create a Google Sheets spreadsheet with the required family data. [Sample](https://docs.google.com/spreadsheets/d/18HTAX68hOJVShpTJ3ValNtCoyhBBkO8w-uPMXWfPdQg/edit?usp=sharing)
 3. Substitute the image links in the spreadsheet with direct image URLs or use Google Drive thumbnail links.
 4. Update `fetching.js` file with your spreadsheet ID and API key.
 5. Open `index.html` in your web browser to view the family tree.

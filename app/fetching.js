@@ -1,8 +1,8 @@
 // Define the fetchFamilyData function in the global scope
 window.fetchFamilyData = function () {
-  const spreadSheetName = "members";
-  const spreadSheetId = "1v15ufpikq7MtPUjyTnRYIZmqDWU7MfgVNZ2Y3-t3yoU";
-  const apiKey = "AIzaSyDjQ2_vyIrTsnQTO2iN0snB0SkjEIv1r5M";
+  const spreadSheetName = "REPLACE_WITH_OUR_SPREAD_SHEET_NAME";
+  const spreadSheetId = "REPLACE_WITH_OUR_SPREAD_SHEET_ID";
+  const apiKey = "REPLACE_WITH_OUR_KEY";
   return new Promise((resolve, reject) => {
     fetch(`https://sheets.googleapis.com/v4/spreadsheets/${spreadSheetId}/values/${spreadSheetName}?alt=json&key=${apiKey}`)
       .then(response => response.json())

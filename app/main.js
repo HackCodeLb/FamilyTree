@@ -73,9 +73,6 @@ window.onload = function () {
         menu: {
           pdf: { text: "Export PDF" }
         },
-        nodeMenu: {
-          pdf: { text: "Export PDF" }
-        },
         mouseScrool: FamilyTree.action.scroll,
         showYScroll: FamilyTree.scroll.visible,
         showXScroll: FamilyTree.scroll.visible,

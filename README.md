@@ -43,5 +43,5 @@ To add images to the family tree, follow these steps:
 To substitute Google Drive images links with direct URLs, replace the `YOUR_IMAGE_ID` part of `https://drive.google.com/thumbnail?id=YOUR_IMAGE_ID&sz=w1000`.
 
 Example:
-- Original Drive link: `https://drive.google.com/uc?export=view&id=YOUR_FILE_ID`
+- Original Drive link: `https://drive.google.com/file/d/YOUR_IMAGE_ID/view?usp=sharing`
 - Direct link: `https://drive.google.com/thumbnail?id=YOUR_IMAGE_ID&sz=w1000`

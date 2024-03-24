@@ -4,6 +4,11 @@ window.fetchFamilyData = function () {
   const spreadSheetName = "REPLACE_WITH_YOUR_SPREAD_SHEET_NAME"; // Name of the Google Sheets spreadsheet
   const spreadSheetId = "REPLACE_WITH_YOUR_SPREAD_SHEET_ID"; // ID of the Google Sheets spreadsheet
   const apiKey = "REPLACE_WITH_YOUR_API_KEY"; // API key for accessing Google Sheets API
+
+  // Check if API key is defined in environment variables and use it if available
+  if (process.env.GOOGLE_SHEETS_API_KEY) {
+      apiKey = process.env.GOOGLE_SHEETS_API_KEY;
+    }
   
   // Return a promise for fetching family data from Google Sheets
   return new Promise((resolve, reject) => {
